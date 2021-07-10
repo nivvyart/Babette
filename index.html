@@ -39,7 +39,34 @@ body {
     max-width: 90vw;
     margin: 0 auto;
     display: flex;
+    height: 100%;
 }
+
+.image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.image-wrap .layer {
+    position: fixed;
+}
+
+.image-wrap .layer.a{
+z-index: 1;
+}
+.image-wrap .layer.b{
+    z-index: 2;
+}
+.image-wrap .layer.c{
+    z-index: 3;
+}
+.image-wrap .layer.d{
+    z-index: 4;
+}
+
 
 .third {
     width: 33%;
@@ -108,8 +135,16 @@ main {
             </div>
         </header>
         <main>
-            <div class="continer">
+            <div class="container">
+                <div class="image-wrap">
+                    <div class="layer a"><img src="./images/a.png" alt="image layer 1"></div>
+                    
+                    <div class="layer b"><img src="./images/b.png" alt=""></div>
+                    <div class="layer c"><img src="./images/c.png" alt=""></div>
+                    <div class="layer d"><img src="./images/d.png" alt=""></div>
+                </div>
             </div>
         </main>
     </body>
 </html>
+
