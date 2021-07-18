@@ -273,7 +273,7 @@ main {
   height: 45px;
   position: absolute;
   overflow: hidden;
-  animation: marquee 10s linear infinite;
+  animation: marquee 15s linear infinite;
 }
 
 .scroll-container h4 span {
