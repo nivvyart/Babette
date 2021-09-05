@@ -28,6 +28,13 @@ body {
   height: 100%;
 }
 
+.container-modal {
+  max-width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  height: auto;
+}
+
 .image-wrap {
   display: flex;
   justify-content: center;
@@ -80,6 +87,9 @@ body {
 .third {
   width: 33%;
 }
+.third.overlay {
+  margin-top: 8px;
+}
 
 .txt-left {
   text-align: left;
@@ -116,8 +126,24 @@ h4,
   font-weight: 200;
   letter-spacing: 0.5px;
 }
+
+h4 a, .h4 a {
+  color: inherit;
+  text-decoration: none;
+}
+
 h5,
 .h5 {
+}
+
+p {
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+p a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .maison {
@@ -131,6 +157,41 @@ main {
   background-repeat: no-repeat;
   background-size: 130%;
 }
+
+
+
+
+
+.contact, .story {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background: var(--body-bg);
+    display: none;
+
+}
+
+.modalWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+
+  margin: 0 auto;
+  height: 100%;
+}
+
+.storyText {
+  text-align: center;
+  position: relative;
+  top: -80px;
+  
+}
+
+/* Mobile */
 
 .menu-icon {
   position: relative;
@@ -164,7 +225,7 @@ main {
   position: absolute;
   display: block;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: var(--bar-bg, #000);
   border-radius: 1px;
   transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
@@ -191,6 +252,41 @@ main {
 .menu-icon:hover .menu-icon__cheeckbox:checked + div span:last-of-type {
   width: 22px;
 }
+
+
+
+
+.scroll-container {
+  border-top: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 60px;
+}
+
+
+.scroller {
+  display: block;
+  width: 200%;
+  height: 45px;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 15s linear infinite;
+}
+
+.scroll-container h4 span {
+  margin: 0 80px;
+  font-size: 0.7rem;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+
 @media (min-width: 1024px) {
   .menu-icon:hover span:first-of-type {
     width: 26px;
