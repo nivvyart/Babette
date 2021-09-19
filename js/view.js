@@ -1,6 +1,4 @@
 $(document).ready(function () {
-  console.log("ready!");
-
   i = 4;
   $(".image-wrap").on("click", () => {
     if (i === 0) {
@@ -29,7 +27,7 @@ $(document).ready(function () {
 
   $(".marquee").marquee({
     //duration in milliseconds of the marquee
-    duration: 25000,
+    duration: 40000,
     //gap in pixels between the tickers
     gap: 20,
     //time in milliseconds before the marquee will start animating
@@ -40,5 +38,29 @@ $(document).ready(function () {
     duplicated: true,
 
     startVisible: true,
+  });
+
+  var d = new Date();
+
+  var datestring =
+    ("0" + d.getDate()).slice(-2) +
+    "-" +
+    ("0" + (d.getMonth() + 1)).slice(-2) +
+    "-" +
+    d.getFullYear();
+
+  $(".date").html(datestring);
+
+  $(".menu-icon__cheeckbox").on("click", () => {
+    $(".mobile-menu").fadeToggle();
+    $("p.menustory").removeClass("show");
+  });
+
+  // mobile menu
+
+  $(".mobile-trigger").click(function () {
+    //alert('on'); WORKING
+    $("p.menustory").removeClass("show");
+    $(this).next("p").addClass("show");
   });
 });
