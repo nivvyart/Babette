@@ -329,7 +329,15 @@ p.menustory {
   width: 100%;
 }
 
+.mobile-logo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-bottom: 50px;
+}
+
 .mobile-logo img {
+  width: 100%;
   display: none;
 }
 
@@ -398,7 +406,11 @@ p.menustory {
 
 @media (max-width: 450px) {
   main {
-    height: 75vh;
+    background: none;
+  }
+
+  .mobile-logo img {
+    display: block;
   }
   .container {
     max-width: 95vw;
