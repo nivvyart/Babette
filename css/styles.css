@@ -19,6 +19,10 @@
 body {
   font-family: var(--primary-font);
   background: var(--body-bg);
+  cursor: url("../dot.png"), auto;
+}
+a:hover {
+  pointer-events: none;
 }
 
 .container {
