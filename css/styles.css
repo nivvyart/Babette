@@ -241,7 +241,7 @@ main {
 .menu-icon.active span:first-of-type,
 .menu-icon .menu-icon__cheeckbox:checked + div span:first-of-type {
   transform: rotate(45deg);
-  top: 5px;
+  top: 5.5px;
 }
 .menu-icon.active span:last-of-type,
 .menu-icon .menu-icon__cheeckbox:checked + div span:last-of-type {
@@ -322,15 +322,13 @@ p.menustory {
   padding: 0 50px;
 }
 
-/* testing */
-
 .mobile-header {
   display: none;
   width: 100%;
 }
 
 .mobile-logo img {
-  max-width: 100%;
+  display: none;
 }
 
 .mobile-menu {
@@ -398,7 +396,7 @@ p.menustory {
 
 @media (max-width: 450px) {
   main {
-    background: none;
+    height: 75vh;
   }
   .container {
     max-width: 95vw;
