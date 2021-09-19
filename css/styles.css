@@ -214,6 +214,7 @@ main {
   -webkit-touch-callout: none;
   position: absolute;
   opacity: 0;
+  cursor: inherit;
 }
 .menu-icon div {
   margin: auto;
@@ -407,6 +408,7 @@ p.menustory {
 @media (max-width: 450px) {
   main {
     background: none;
+    height: 75vh;
   }
 
   .mobile-logo img {
