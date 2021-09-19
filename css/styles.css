@@ -306,6 +306,8 @@ main {
 .scroll-container h4 span {
   margin: 0 80px;
   font-size: 0.7rem;
+  position: relative;
+  bottom: 2px;
 }
 
 /* placeholder only */
