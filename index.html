@@ -13,11 +13,34 @@
         <header>
             <div class="container">
                 <div class="desktop-header">
-                    <div class="third txt-left"><h4><a href="#" id="contactbtn">Contact</a></h4></div>
-                    <div class="third txt-center"><h4>Menu</h4></div>
-                    <div class="third txt-right"><h4><a href="#" id="storybtn">Story</a></h4></div>
+                  <div class="grid-header">
+                    <div class="header-item txt-left">
+                        <h4>
+                            <button id="storybtn" class="action-button">Story</button>
+                        </h4>
+                    </div>
+                    <div class="header-item txt-left">
+                      <h4>
+                         <button id="menuButton" class="action-button" onclick="window.location.href='240831Menu.pdf'">
+                            Menu
+                        </button>
+                      </h4>
+                    </div>
+                    <div class="header-item txt-right grid-item-11">
+                      <h4>
+                        <button id="eventsbtn" class="action-button">Catering & Events</button>
+                      </h4>
+                    </div>
+                    <div class="header-item txt-right grid-item-12">
+                        <h4>
+                            <button id="contactbtn" class="action-button">Contact</button>
+                        </h4>
+                    </div>
+                  </div>
                 </div>
-            </div>  
+              </div>
+              
+             
             <div class="container">
                 <div class="mobile-header">
 
@@ -31,9 +54,28 @@
                     <div class="mobile-menu">
                         <div class="mobile-inner">
 
-                            <div class="mobile-item"><h4>Menu</h4></div>
-                            <div class="mobile-item"><h4>Story</h4></div>
-                            <div class="mobile-item"><h4>Contact</h4></div>
+                            <div class="mobile-item">
+                                <h4>
+                                    <button id="menuButton" class="action-button" onclick="window.location.href='240831Menu.pdf'">
+                                    Menu
+                                    </button>
+                                </h4>
+                            </div>
+                            <div class="mobile-item">
+                                <h4>
+                                    <button id="mstorybtn" class="action-button">Story</button>
+                                </h4>
+                            </div>
+                            <div class="mobile-item">
+                                <h4>
+                                    <button id="mcontactbtn" class="action-button">Contact</button>
+                                </h4>
+                            </div>
+                            <div class="mobile-item">
+                                <h4>
+                                    <button id="meventsbtn" class="action-button">Catering & Events</button>
+                                </h4>
+                            </div>
 
                         </div>
 
@@ -61,28 +103,37 @@
    
            <div class="scroll-container ">
                 <div class="scroller marquee">
-                    <h4>@BABETTESYD <span class="date">08.06.21</span> UN CAFÉ AU QVB <span class="date">08.06.21</span> MON–SUN 6.30AM–6PM  <span class="date">08.06.21</span> @BABETTESYD <span class="date">08.06.21</span> UN CAFÉ AU QVB <span class="date">08.06.21</span> MON–SUN 6.30AM–6PM  <span class="date">08.06.21</span>                                    
+                    <h4>@BABETTESYD <span class="date">08.06.21</span> UN CAFÉ AU QVB <span class="date">08.06.21</span> OPEN 7 DAYS  <span class="date">08.06.21</span> @BABETTESYD <span class="date">08.06.21</span> UN CAFÉ AU QVB <span class="date">08.06.21</span> OPEN 7 DAYS  <span class="date">08.06.21</span>                                    
                     </h4>
                 </div>
             </div>                 
         </main>
         <div class="contact">
             <div class="container-modal">
-                <div class="third txt-left overlay"><h4>Contact</h4></div>
-                <div class="third txt-center overlay">
-                    <h3></h3>   
+                <div class="grid-header">
+                    <div class="header-item txt-left">
+                        <h4><Button href="#" id="contactClose"><span class="sidemenu-x"></span></Button></h4>
+                    </div>
+                    <div class="header-item txt-left">
+                    </div>
+                    <div class="header-item txt-right grid-item-11">
+                   
+                    </div>
+                    <div class="header-item txt-right grid-item-12">
+                        <h4>Contact</h4>
+                    </div>
                 </div>
-                <div class="third txt-right overlay"><h4><a href="#" id="contactClose"><span class="sidemenu-x"></span></a></h4></div>
             </div>
             <div class="modalWrap">
                 <p class="storyText">
                     Visit us at:<br>
+                    Shop G029<br>
                     Ground Floor <br>
                     Queen Victoria Building<br>
                     Sydney 2000<br>
                     &nbsp;<br>
                     Email us at:<br>
-                    contact@babette.com.au <br>
+                    <a href='mailto:contact@babette.com.au'>contact@babette.com.au</a> <br>
                     &nbsp;<br>
                     Follow us at:<br>
                     <a href="https://www.instagram.com/babettesyd/" target="_blank">@babettesyd</a>
@@ -91,12 +142,18 @@
         </div>
         <div class="story">
             <div class="container-modal">
-                <div class="third txt-left overlay"><h4><a href="#" id="storyClose"><span class="sidemenu-x"></span></a></h4></div>
-                <div class="third txt-center overlay"><h3></h3>
-                    
+                <div class="grid-header">
+                    <div class="header-item txt-left"><h4>Story</h4></div>
+                    <div class="header-item txt-left">
+                    </div>
+                    <div class="header-item txt-right grid-item-11">
+                   
+                    </div>
+                    <div class="header-item txt-right grid-item-12">
+                        <h4><Button href="#" id="storyClose"><span class="sidemenu-x"></span></Button></h4>
+
+                    </div>
                 </div>
-                <div class="third txt-right overlay"><h4>Story</h4></div>
-               
             </div>
             <div class="modalWrap">
                 <p class="storyText">
@@ -104,15 +161,39 @@
                 </p>
             </div>
         </div>
+        <div class="events">
+            <div class="container-modal">
+                <div class="grid-header">
+                    <div class="header-item txt-left">
+                    <h4><Button href="#" id="eventsClose"><span class="sidemenu-x"></span></Button></h4>
+                    </div>
+                    <div class="header-item txt-left">
+                    </div>
+                    <div class="header-item txt-right grid-item-11">
+                    <h4>
+                        <button id="eventsbtn" class="action-button">Catering & Events</button>
+                    </h4>
+                    </div>
+                    <div class="header-item txt-right grid-item-12"></div>
+                </div>
+            </div>
+            <div class="modalWrap">
+                <div class="storyText">
+                    <h4>Catering</h4> 
+
+                    Babette offers bespoke catering services for your next event, with freshly brewed coffee and breakfast and lunch options. Whether for a meeting, celebration, or gathering, we'll provide thoughtful, high-quality fare to suit your needs.
+                    <h4 style="margin-top: 50px;">Events</h4>
+                    At Babette, we offer event hosting in our charming café or assist in planning and coordinating events at your chosen venue. From intimate gatherings to larger celebrations, we provide seamless event support, ensuring every detail is taken care of with care and style. 
+                    Contact us at 
+                    <p><a style="color: black" href="mailto:contact@babette.com.au">contact@babette.com.au</a></p>
+              
+                </div>
+            </div>
+        </div>
     </body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- <script src="js/webticker.min.js"></script> -->
-
     <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js" type="text/javascript"></script>
-
-
-
     <script src="js/view.js"></script>
-
 </html>
 

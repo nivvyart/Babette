@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  console.log('js lodaded')
   i = 4;
   $(".image-wrap").on("click", () => {
     if (i === 0) {
@@ -11,6 +12,11 @@ $(document).ready(function () {
   });
 
   $("#contactbtn").on("click", () => {
+    console.log('sss')
+    $(".contact").fadeIn();
+  });
+
+  $("#mcontactbtn").on("click", () => {
     $(".contact").fadeIn();
   });
 
@@ -21,8 +27,27 @@ $(document).ready(function () {
   $("#storybtn").on("click", () => {
     $(".story").fadeIn();
   });
+
+  $("#mstorybtn").on("click", () => {
+    $(".story").fadeIn();
+  });
+
   $("#storyClose").on("click", () => {
     $(".story").fadeOut();
+  });
+
+  $("#eventsbtn").on("click", () => {
+    console.log('events')
+    $(".events").fadeIn();
+  });
+  
+  $("#meventsbtn").on("click", () => {
+    console.log('events')
+    $(".events").fadeIn();
+  });
+  $("#eventsClose").on("click", () => {
+    console.log('events')
+    $(".events").fadeOut();
   });
 
   $(".marquee").marquee({
